@@ -1,0 +1,814 @@
+{
+    "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni;1",
+    "@type": "Interface",
+    "contents": [
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:ROTARY_HOME_POS;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Rotary Table Home Positon"
+            },
+            "name": "ROTARY_HOME_POS",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:TRANSFER_ARM_POS;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Transfer Arm Home Positon"
+            },
+            "name": "TRANSFER_ARM_POS",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:ROBOT_BUSY_STATUS;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Robot Arm Busy"
+            },
+            "name": "ROBOT_BUSY_STATUS",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:MAT_INPUT_DETECTED;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Material input detected"
+            },
+            "name": "MAT_INPUT_DETECTED",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:RFID_SELECT_MAT_1;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "RFID Selected material 1"
+            },
+            "name": "RFID_SELECT_MAT_1",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:RFID_SELECT_MAT_2;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "RFID Selected material 2"
+            },
+            "name": "RFID_SELECT_MAT_2",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:PRESSURE_LOW;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Pressure Low"
+            },
+            "name": "PRESSURE_LOW",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:MAT_1_LOADING_DONE;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Material 1 loading done"
+            },
+            "name": "MAT_1_LOADING_DONE",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:MAT_2_LOADING_DONE;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Material 2 loading done"
+            },
+            "name": "MAT_2_LOADING_DONE",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:VISION_CHECK_PASS;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Vision Check Pass"
+            },
+            "name": "VISION_CHECK_PASS",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:VISION_CHECK_FAIL;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Vision Check Fail"
+            },
+            "name": "VISION_CHECK_FAIL",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:MAT_SCRAP_DETECTED;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Material Scrap detected"
+            },
+            "name": "MAT_SCRAP_DETECTED",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:EN_GANTRY_SLIDER_AXIS;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Gantry Slider Powered"
+            },
+            "name": "EN_GANTRY_SLIDER_AXIS",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:EN_ROTARY_TABLE;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Rotary Table Powered"
+            },
+            "name": "EN_ROTARY_TABLE",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:EN_TRANSFER_ARM;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Transfer Arm Powered"
+            },
+            "name": "EN_TRANSFER_ARM",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:CONVEYOR_M1_ON;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Conveyer motor 1 on"
+            },
+            "name": "CONVEYOR_M1_ON",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:CONVEYOR_M2_ON;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Conveyer motor 1 on"
+            },
+            "name": "CONVEYOR_M2_ON",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:MOTOR_DRILLING_ON;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Drilling motor on"
+            },
+            "name": "MOTOR_DRILLING_ON",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:ALARM_LIGHT_RED;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Alarm Red light"
+            },
+            "name": "ALARM_LIGHT_RED",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:CLAMPING_ARM;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Clamping arm on"
+            },
+            "name": "CLAMPING_ARM",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:ROTARY_SLIDER;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Rotary Slider on"
+            },
+            "name": "ROTARY_SLIDER",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:ENABLE_VACUUM_SUCTION;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Vacuum suction on"
+            },
+            "name": "ENABLE_VACUUM_SUCTION",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:CYCLESTOP_LIGHT_YELLOW;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Yellow Light"
+            },
+            "name": "CYCLESTOP_LIGHT_YELLOW",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:CYCLESTART_LIGHT_GREEN;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Green Light"
+            },
+            "name": "CYCLESTART_LIGHT_GREEN",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:READY_FOR_VISION_INSPECTION;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Ready for vision inspection"
+            },
+            "name": "READY_FOR_VISION_INSPECTION",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:MAT_SCRAP_COUNTED;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Material scrap counted"
+            },
+            "name": "MAT_SCRAP_COUNTED",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:CONV_RIGHT_READY_FOR_PICKUP;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Conv right ready for pickup"
+            },
+            "name": "CONV_RIGHT_READY_FOR_PICKUP",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:START_DRILLING;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Start drilling"
+            },
+            "name": "START_DRILLING",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:START_CONVEYOR_RIGHT;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Start conveyor right"
+            },
+            "name": "START_CONVEYOR_RIGHT",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:START_LOAD_BASE_PART;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Start load base part"
+            },
+            "name": "START_LOAD_BASE_PART",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:RUN_ROTATRY_TABLE;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Run rotary table"
+            },
+            "name": "RUN_ROTATRY_TABLE",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:START_TRANSFER_ARM;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Start transfer arm"
+            },
+            "name": "START_TRANSFER_ARM",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:START_VISION_CAMERA;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Start vision camera"
+            },
+            "name": "START_VISION_CAMERA",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:MOVE_TO_TOP_PART_POS;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Move to top part position"
+            },
+            "name": "MOVE_TO_TOP_PART_POS",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:START_LOAD_TOP_PART;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Start loading top part"
+            },
+            "name": "START_LOAD_TOP_PART",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:START_CALL_PICKING_POS;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Start call picking  position"
+            },
+            "name": "START_CALL_PICKING_POS",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:START_PICKING;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Start picking"
+            },
+            "name": "START_PICKING",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:START_STORAGE;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Start storage"
+            },
+            "name": "START_STORAGE",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:START_STORAGE_UNLOAD;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Start storage unload"
+            },
+            "name": "START_STORAGE_UNLOAD",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:END_OF_CYCLE;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "End of cycle"
+            },
+            "name": "END_OF_CYCLE",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:RUN_ROBOT_ARM;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Run robot arm"
+            },
+            "name": "RUN_ROBOT_ARM",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:PLC_READY;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "PLC Ready"
+            },
+            "name": "PLC_READY",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:GS_HOME_RUN;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Gantry Slider home run"
+            },
+            "name": "GS_HOME_RUN",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:GS_HOMING_TIME_EXCEED;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Gantry Slider homing time exceed"
+            },
+            "name": "GS_HOMING_TIME_EXCEED",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:RT_HOME_RUN;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Rotary table home run"
+            },
+            "name": "RT_HOME_RUN",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:RT_HOME_TIME_EXCEED;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Rotary table home time exceed"
+            },
+            "name": "RT_HOME_TIME_EXCEED",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:TA_HOME_RUN;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Transfer arm home run"
+            },
+            "name": "TA_HOME_RUN",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:TA_HOMING_TIME_EXCEED;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Transfer arm homing time exceed"
+            },
+            "name": "TA_HOMING_TIME_EXCEED",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:ACTIVATE_TA_PICKING_SEQ;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Activate Transfer arm picking sequence"
+            },
+            "name": "ACTIVATE_TA_PICKING_SEQ",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:TA_DIRECTION_CCW;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Transfer arm direction ccw"
+            },
+            "name": "TA_DIRECTION_CCW",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:TA_PICKING_TIME_EXCEED;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Transfer arm picking time exceed"
+            },
+            "name": "TA_PICKING_TIME_EXCEED",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:ACTIVATE_TA_UNLOAD_SEQ;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Activate Transfer arm unload sequence"
+            },
+            "name": "ACTIVATE_TA_UNLOAD_SEQ",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:TA_DIRECTION_CW;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Transfer arm direction cw"
+            },
+            "name": "TA_DIRECTION_CW",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:TA_UNLOAD_TIME_EXCEED;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Transfer arm unload time exceed"
+            },
+            "name": "TA_UNLOAD_TIME_EXCEED",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:READY_TO_RUN;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Ready to run"
+            },
+            "name": "READY_TO_RUN",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:ONE_CYCLE;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "One cycle"
+            },
+            "name": "ONE_CYCLE",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:AUTO_CYCLE;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Auto cycle"
+            },
+            "name": "AUTO_CYCLE",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:MAT_TRAY_SELECTED;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Material tray selected"
+            },
+            "name": "MAT_TRAY_SELECTED",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:EMERGENCY_STOP;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Emergency stop"
+            },
+            "name": "EMERGENCY_STOP",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:GS_STORAGE_POCKET_DONE_TRIGGER;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Gantry Slider storage pocket done"
+            },
+            "name": "GS_STORAGE_POCKET_DONE_TRIGGER",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:CONV_LEFT_BUSY;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Conveyer left busy"
+            },
+            "name": "CONV_LEFT_BUSY",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:ROBOT_ARM_BUSY;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Robot arm busy"
+            },
+            "name": "ROBOT_ARM_BUSY",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:CONV_RIGHT_BUSY;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Conveyer right busy"
+            },
+            "name": "CONV_RIGHT_BUSY",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:DRILLING_BUSY;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Drilling busy"
+            },
+            "name": "DRILLING_BUSY",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:LOAD_BASE_BUSY;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Load base busy"
+            },
+            "name": "LOAD_BASE_BUSY",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:ROTARY_TABLE_BUSY;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Rotary table busy"
+            },
+            "name": "ROTARY_TABLE_BUSY",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:TA_BUSY;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Transfer arm busy"
+            },
+            "name": "TA_BUSY",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:VISION_BUSY;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Vision busy"
+            },
+            "name": "VISION_BUSY",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:LOAD_TOP_BUSY;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Load top busy"
+            },
+            "name": "LOAD_TOP_BUSY",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:UNLOAD_TO_UPPER_LVL;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Unload to upper level"
+            },
+            "name": "UNLOAD_TO_UPPER_LVL",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:UNLOAD_TO_BOTTOM_LVL;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Unload to bottom level"
+            },
+            "name": "UNLOAD_TO_BOTTOM_LVL",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:CLAMPING_ARM_RELEASED;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Clamping arm released"
+            },
+            "name": "CLAMPING_ARM_RELEASED",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:END_UPPER_UNLOAD_SEQUENCE;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "End upper unload sequence"
+            },
+            "name": "END_UPPER_UNLOAD_SEQUENCE",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:END_BOTTOM_UNLOAD_SEQUENCE;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "End bottom unload sequence"
+            },
+            "name": "END_BOTTOM_UNLOAD_SEQUENCE",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:GS_RUN_PICKING;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Gantry Slider run picking"
+            },
+            "name": "GS_RUN_PICKING",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:GS_RUN_STORAGE;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Gantry Slider run storage"
+            },
+            "name": "GS_RUN_STORAGE",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:UPPER_LEVEL_STORAGE;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Upper level storage"
+            },
+            "name": "UPPER_LEVEL_STORAGE",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:BOTTOM_LEVEL_STORAGE;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Bottom level storage"
+            },
+            "name": "BOTTOM_LEVEL_STORAGE",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:GS_RUN_STORAGE_BEGIN;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Gantry Slider run storage begin"
+            },
+            "name": "GS_RUN_STORAGE_BEGIN",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:GS_RUN_PICKING_BEGIN;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Gantry Slider run picking begin"
+            },
+            "name": "GS_RUN_PICKING_BEGIN",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:LOADING_TOP_CUP;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Loading top cup"
+            },
+            "name": "LOADING_TOP_CUP",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:LOAD_TOP_DONE;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Load top done"
+            },
+            "name": "LOAD_TOP_DONE",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:START_TRANSFER_ARM_UNLOAD;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Start transfer arm unload"
+            },
+            "name": "START_TRANSFER_ARM_UNLOAD",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:TA_SEQ_Completed;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Transfer arm sequence completed"
+            },
+            "name": "TA_SEQ_Completed",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:DRILLING_PROCESS_END;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Drilling process end"
+            },
+            "name": "DRILLING_PROCESS_END",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:LOADING_BASE_CUP;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Loading base cup"
+            },
+            "name": "LOADING_BASE_CUP",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:LOAD_BASE_DONE;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Load base done"
+            },
+            "name": "LOAD_BASE_DONE",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:MAT_PROCESS_TO_SCRAP;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Material process to scrap"
+            },
+            "name": "MAT_PROCESS_TO_SCRAP",
+            "schema": "integer"
+        },
+        {
+            "@id": "dtmi:smartfactorydemo:SmartMiniFactory2ni:ERR_STATUS;1",
+            "@type": "Telemetry",
+            "displayName": {
+                "en": "Error Status"
+            },
+            "name": "ERR_STATUS",
+            "schema": "integer"
+        }
+    ],
+    "displayName": {
+        "en": "Smart mini-factory"
+    },
+    "@context": [
+        "dtmi:iotcentral:context;2",
+        "dtmi:dtdl:context;2"
+    ]
+}
